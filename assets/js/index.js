@@ -136,7 +136,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const leftItems = document.querySelectorAll(".reviews-left-item");
     const reviewItems = document.querySelectorAll(".reviews-item");
 
-    // Скрываем все элементы, кроме первого
     leftItems.forEach((item, index) => {
         if (index !== 0) {
             item.style.display = "none";
