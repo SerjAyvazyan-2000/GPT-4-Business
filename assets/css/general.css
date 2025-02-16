@@ -1,0 +1,136 @@
+:root {
+    --light-black: rgba(35, 35, 35, 1);
+    --light-black2: rgba(44, 44, 44, 1);
+
+    --white: rgba(255, 255, 255, 1);
+    --gray: rgba(67, 67, 67, 1);
+    --gray2: rgba(49, 49, 49, 1);
+    --gray3: rgba(89, 89, 89, 1);
+    --gray4: rgba(54, 54, 54, 1);
+    --gray5: rgba(133, 133, 133, 1);
+    --gray6: rgba(41, 41, 41, 1);
+    --gray7: rgba(59, 59, 59, 1);
+    --gray8: rgba(102, 102, 102, 1);
+    --gray9: rgba(50, 50, 50, 1);
+
+    --light-gray: rgba(153, 153, 153, 1);
+
+    --primary: rgba(84, 102, 233, 1);
+
+    --black: rgba(27, 27, 27, 1);
+    --black2: rgba(30, 30, 30, 1);
+    --black3: rgba(23, 23, 23, 1);
+
+
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1390px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text-wrap {
+    display: block;
+}
+
+.desktop-text-wrap {
+    display: block;
+}
+
+
+.img-mobile {
+    display: none;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    padding: 22px 50px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+    background: var(--light-black);
+    color: var(--white);
+    border: 1px solid var(--gray);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot-blue {
+    background: var(--primary);
+}
+
+.dot-white {
+    background: var(--white);
+    position: absolute;
+    right: -10px;
+}
+
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+
+
+}
+
+@media (max-width: 992px) {
+
+
+}
+
+@media (max-width: 768px) {
+
+    .desktop-text-wrap {
+        display: inline;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .img-desktop {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+
+    }
+
+
+    .mobile-text-wrap {
+        display: block;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+
+}
