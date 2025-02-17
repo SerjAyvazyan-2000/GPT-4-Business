@@ -13,7 +13,7 @@ function initSwiper() {
 
     reviewsSwiper = new Swiper(".reviews-swiper", {
         direction: direction,
-        spaceBetween: 10,
+        spaceBetween: 15,
         slidesPerView: 3,
         pagination: {
             el: ".reviews-pagination",

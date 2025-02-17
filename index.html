@@ -13,11 +13,12 @@
 </head>
 <body>
 
+
 <div class="wrapper">
-    <header>
+    <header class="header">
         <div class="header-container">
             <div class="header-body G-align-center">
-                <a href="index.html" class="header-logo">
+                <a href="index.html" class="header-logo G-flex">
                     <img src="assets/images/logo.svg" alt="logo">
                 </a>
                 <div class="menu-bg"></div>
@@ -76,6 +77,34 @@
                         </h1>
                         <p class='hero-sub-title'>Минимизируйте риски и принимайте уверенные решения.
                             <span class='desktop-text-wrap'>Для финансистов, бухгалтеров и инвесторов</span></p>
+                        <div class='hero-services-mobile G-align-center'>
+                            <div class='hero-service G-align-center'>
+                                <div class='service-icon G-flex'>
+                                    <img src="assets/images/setting2.svg" alt="">
+                                </div>
+                                <p class='service-text'>Более 5 000+ шаблонов</p>
+                            </div>
+                            <div class='hero-service G-align-center'>
+                                <div class='service-icon G-flex'>
+                                    <img src="assets/images/plus2.svg" alt="">
+                                </div>
+                                <p class='service-text'>Передовая нейросеть</p>
+                            </div>
+
+                            <div class='hero-service G-align-center'>
+                                <div class='service-icon G-flex'>
+                                    <img src="assets/images/more6.svg" alt="">
+                                </div>
+                                <p class='service-text'>Бесплатная регистрация</p>
+                            </div>
+                        </div>
+
+                        <div class='powered-by-mobile G-align-center'>
+                            <p>Powered by</p>
+                            <i class="icon icon-chatGpt"></i>
+                            <p>OpenAI</p>
+                        </div>
+
                         <button class="hero-btn btn-primary">Начать бесплатно</button>
                     </div>
                     <div class='hero-services G-align-center'>
@@ -104,7 +133,9 @@
                         <img src="assets/images/heroSubtract.webp" alt="">
                     </div>
                     <div class='hero-diagram G-flex'>
-                        <img src="assets/images/diagram.webp" alt="">
+                        <img class="img-desktop" src="assets/images/diagram.webp" alt="">
+                        <img class="img-mobile" src="assets/images/diagramMobile.webp" alt="">
+
                     </div>
                     <div class='hero-clock G-flex'>
                         <img src="assets/images/clock.webp" alt="">
@@ -118,7 +149,7 @@
                         <img src="assets/images/heroLineDecor.webp" alt="">
                     </div>
                     <div class="hero-radar "></div>
-                    
+
                     <div class='hero-coin  hero-coin--one G-flex'>
                         <img src="assets/images/coin1.webp" alt="">
                     </div>
@@ -151,7 +182,10 @@
                         <img src="assets/images/subtract3.webp" alt="">
                     </div>
                     <div class='about-us-lines G-flex'>
-                        <img src="assets/images/aboutLines.webp" alt="">
+                        <img class="img-desktop" src="assets/images/aboutLines.webp" alt="">
+                        <img class="img-mobile" src="assets/images/aboutLinesMobile.webp" alt="">
+
+
                     </div>
 
                     <div class='about-us-description'>
@@ -176,7 +210,9 @@
                     </div>
 
                     <div class="about-us-time G-flex">
-                        <img src="assets/images/time.webp" alt="">
+                        <img class="img-desktop" src="assets/images/time.webp" alt="">
+                        <img class="img-mobile" src="assets/images/timeMobile.webp" alt="">
+
                     </div>
                     <div class="about-us-checkbox G-flex">
                         <img src="assets/images/checkbox.webp" alt="">
@@ -215,149 +251,317 @@
                         <div data-id="investors" class="opportunities-tab">Инвесторы</div>
 
                     </div>
+                    <div class="opportunities-tablet-items G-flex-column">
+                        <div  class='opportunities-cnt financiers-cnt G-align-start'>
+                            <div class="opportunities-info">
+                                <h2 class='opportunities-mobile-title'>Финансисты</h2>
 
-                    <div id="financiers" class='opportunities-cnt financiers-cnt G-align-start'>
-                        <div class="opportunities-info">
-                            <h2 class='opportunities-title'>Топ решений для финансистов</h2>
-                            <div class="opportunities-items G-flex">
-                                <div class="opportunities-item">Анализ финансовых отчетов</div>
-                                <div class="opportunities-item">Оценка инвестиционных рисков</div>
-                                <div class="opportunities-item">Финансовые сводки</div>
-                                <div class="opportunities-item">Расчет показателей и KPI – ROI, NPV, IRR, EBIT, EBITDA
+                                <h2 class='opportunities-title'>Топ решений для финансистов</h2>
+                                <div class="opportunities-items G-flex">
+                                    <div class="opportunities-item">Анализ финансовых отчетов</div>
+                                    <div class="opportunities-item">Оценка инвестиционных рисков</div>
+                                    <div class="opportunities-item">Финансовые сводки</div>
+                                    <div class="opportunities-item">Расчет показателей и KPI – ROI, NPV, IRR, EBIT, EBITDA
+                                    </div>
+                                    <div class="opportunities-item">Экономические прогнозы</div>
+                                    <div class="opportunities-item">Формирование инвестиционных стратегий</div>
+
                                 </div>
-                                <div class="opportunities-item">Экономические прогнозы</div>
-                                <div class="opportunities-item">Формирование инвестиционных стратегий</div>
-
-                            </div>
-                            <p class="opportunities-clue">Ускоряет анализ P&L, KPI и финансовых отчётов, снижая
-                                <span class="desktop-text-wrap">риск
+                                <p class="opportunities-clue">Ускоряет анализ P&L, KPI и финансовых отчётов, снижая
+                                    <span class="desktop-text-wrap">риск
                                 ошибок и упрощая принятие решений</span>
-                            </p>
-                        </div>
-                        <div class="opportunities-media financiers-media">
-                            <div class='financiers-img financiers-img--one G-flex'>
-                                <img src="assets/images/financiers1.webp" alt="">
+                                </p>
                             </div>
-                            <div class='financiers-img financiers-img--two G-flex'>
-                                <img src="assets/images/financiers2.webp" alt="">
-                            </div>
-                            <div class='opportunities-lines G-flex'>
-                                <img src="assets/images/opportunitiesLines.webp" alt="">
-                            </div>
-
-                            <div class="financiers-coin financiers-coin--one G-flex">
-                                <img src="assets/images/coin3.webp" alt="">
-                            </div>
-                            <div class="financiers-coin financiers-coin--two G-flex">
-                                <img src="assets/images/coin4.webp" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div id="accountants" class='opportunities-cnt  G-align-start'>
-                        <div class="opportunities-info">
-                            <h2 class='opportunities-title'>Топ решений для бухгалтеров</h2>
-                            <div class="opportunities-items G-flex">
-                                <div class="opportunities-item">Подготовка проводок, отчетов, сверок</div>
-                                <div class="opportunities-item">Генерация бухгалтерских документов</div>
-                                <div class="opportunities-item">Объяснение налогового законодательства</div>
-                                <div class="opportunities-item">Анализ данных, поиск расхождений
+                            <div class="opportunities-media financiers-media">
+                                <div class='financiers-img financiers-img--one G-flex'>
+                                    <img src="assets/images/financiers1.webp" alt="">
                                 </div>
-                                <div class="opportunities-item">Анализ налоговой нагрузки, подсказки по льготам</div>
-                                <div class="opportunities-item">Подготовка к аудиту</div>
-
-                            </div>
-                            <p class="opportunities-clue">
-                                Автоматизирует расчёты, упрощает ведение отчётности
-                                <span class="desktop-text-wrap">и помогает находить ошибки до сдачи баланса</span>
-                            </p>
-                        </div>
-                        <div class="opportunities-media accountants-media">
-
-                            <div class='accountants-decor G-flex'>
-                                <img src="assets/images/accountantsDecor.webp" alt="">
-                            </div>
-                            <div class='accountants-decor--two G-flex'>
-                                <img src="assets/images/accountantsDecor2.webp" alt="">
-                            </div>
-                            <div class='accountants-decor--tree G-flex'>
-                                <img src="assets/images/accountantsDecor3.webp" alt="">
-                            </div>
-                            <div class='accountants-decor--for G-flex'>
-                                <img src="assets/images/accountantsDecor4.webp" alt="">
-                            </div>
-
-                            <div class='accountants-decor--five G-flex'>
-                                <img src="assets/images/coin5.webp" alt="">
-                            </div>
-
-                            <div class='accountants-decor--six G-flex'>
-                                <img src="assets/images/coin6.webp" alt="">
-                            </div>
-
-                            <div class='opportunities-lines G-flex'>
-                                <img src="assets/images/opportunitiesLines.webp" alt="">
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div id="investors" class='opportunities-cnt financiers-cnt  G-align-start'>
-                        <div class="opportunities-info">
-                            <h2 class='opportunities-title'>Топ решений для инвесторов</h2>
-                            <div class="opportunities-items G-flex">
-                                <div class="opportunities-item">Формирование инвестиционных идейй</div>
-                                <div class="opportunities-item">SWOT-анализ</div>
-                                <div class="opportunities-item">Анализ компаний и стартапов</div>
-                                <div class="opportunities-item">Мониторинг фондового рынка
+                                <div class='financiers-img financiers-img--two G-flex'>
+                                    <img src="assets/images/financiers2.webp" alt="">
                                 </div>
-                                <div class="opportunities-item">Стратегии управления капиталом</div>
-                                <div class="opportunities-item">Обзор крипторынка</div>
+                                <div class='opportunities-lines G-flex'>
+                                    <img src="assets/images/opportunitiesLines.webp" alt="">
+                                </div>
 
+                                <div class="financiers-coin financiers-coin--one G-flex">
+                                    <img src="assets/images/coin3.webp" alt="">
+                                </div>
+                                <div class="financiers-coin financiers-coin--two G-flex">
+                                    <img src="assets/images/coin4.webp" alt="">
+                                </div>
                             </div>
-                            <p class="opportunities-clue">
-                                Находит перспективные активы, анализирует отчёты
-                                <span class="desktop-text-wrap">и прогнозирует движение рынка на основе вводных данных</span>
-                            </p>
+
+                            <button class="opportunities-btn btn-primary">Начать бесплатно</button>
+
                         </div>
-                        <div class="opportunities-media financiers-media">
-
-                            <div class='investors-decor G-flex'>
-                                <img src="assets/images/mask.webp" alt="">
-                            </div>
-                            <div class='investors-decor--two G-flex'>
-                                <img src="assets/images/mask2.webp" alt="">
-                            </div>
-                            <div class='investors-decor--tree G-flex'>
-                                <img src="assets/images/investorsDecor1.webp" alt="">
-                            </div>
-
-                            <div class='investors-decor--for G-flex'>
-                                <img src="assets/images/investorsDecor2.webp" alt="">
-                            </div>
 
 
-                            <div class='investors-decor--five G-flex'>
-                                <img src="assets/images/investorsDecor3.webp" alt="">
+                        <div  class='opportunities-cnt  G-align-start'>
+                            <div class="opportunities-info">
+                                <h2 class='opportunities-mobile-title'>Бухгалтеры</h2>
+
+                                <h2 class='opportunities-title'>Топ решений для бухгалтеров</h2>
+                                <div class="opportunities-items G-flex">
+                                    <div class="opportunities-item">Подготовка проводок, отчетов, сверок</div>
+                                    <div class="opportunities-item">Генерация бухгалтерских документов</div>
+                                    <div class="opportunities-item">Объяснение налогового законодательства</div>
+                                    <div class="opportunities-item">Анализ данных, поиск расхождений
+                                    </div>
+                                    <div class="opportunities-item">Анализ налоговой нагрузки, подсказки по льготам</div>
+                                    <div class="opportunities-item">Подготовка к аудиту</div>
+
+                                </div>
+                                <p class="opportunities-clue">
+                                    Автоматизирует расчёты, упрощает ведение отчётности
+                                    <span class="desktop-text-wrap">и помогает находить ошибки до сдачи баланса</span>
+                                </p>
                             </div>
-                            <div class='investors-decor--six G-flex'>
-                                <img src="assets/images/settings2.webp" alt="">
+                            <div class="opportunities-media accountants-media">
+
+                                <div class='accountants-decor G-flex'>
+                                    <img src="assets/images/accountantsDecor.webp" alt="">
+                                </div>
+                                <div class='accountants-decor--two G-flex'>
+                                    <img src="assets/images/accountantsDecor2.webp" alt="">
+                                </div>
+                                <div class='accountants-decor--tree G-flex'>
+                                    <img src="assets/images/accountantsDecor3.webp" alt="">
+                                </div>
+                                <div class='accountants-decor--for G-flex'>
+                                    <img src="assets/images/accountantsDecor4.webp" alt="">
+                                </div>
+
+                                <div class='accountants-decor--five G-flex'>
+                                    <img src="assets/images/coin5.webp" alt="">
+                                </div>
+
+                                <div class='accountants-decor--six G-flex'>
+                                    <img src="assets/images/coin6.webp" alt="">
+                                </div>
+
+                                <div class='opportunities-lines G-flex'>
+                                    <img class="lines-img-desktop" src="assets/images/opportunitiesLines.webp" alt="">
+                                    <img class="lines-img-mobile" src="assets/images/opportunitiesLinesMobile1.webp" alt="">
+
+                                </div>
+
                             </div>
 
-                            <div class='investors-decor--seven G-flex'>
-                                <img src="assets/images/coin7.webp" alt="">
+                            <button class="opportunities-btn btn-primary">Начать бесплатно</button>
+
+                        </div>
+
+
+                        <div  class='opportunities-cnt financiers-cnt  G-align-start'>
+                            <div class="opportunities-info">
+                                <h2 class='opportunities-mobile-title'>Инвесторы</h2>
+
+                                <h2 class='opportunities-title'>Топ решений для инвесторов</h2>
+                                <div class="opportunities-items G-flex">
+                                    <div class="opportunities-item">Формирование инвестиционных идейй</div>
+                                    <div class="opportunities-item">SWOT-анализ</div>
+                                    <div class="opportunities-item">Анализ компаний и стартапов</div>
+                                    <div class="opportunities-item">Мониторинг фондового рынка
+                                    </div>
+                                    <div class="opportunities-item">Стратегии управления капиталом</div>
+                                    <div class="opportunities-item">Обзор крипторынка</div>
+
+                                </div>
+                                <p class="opportunities-clue">
+                                    Находит перспективные активы, анализирует отчёты
+                                    <span class="desktop-text-wrap">и прогнозирует движение рынка на основе вводных данных</span>
+                                </p>
+                            </div>
+                            <div class="opportunities-media financiers-media">
+
+                                <div class='investors-decor-desktop investors-decor G-flex'>
+                                    <img src="assets/images/mask.webp" alt="">
+                                </div>
+                                <div class='investors-decor-desktop investors-decor--two G-flex'>
+                                    <img src="assets/images/mask2.webp" alt="">
+                                </div>
+                                <div class='investors-decor-desktop investors-decor--tree G-flex'>
+                                    <img src="assets/images/investorsDecor1.webp" alt="">
+                                </div>
+
+                                <div class='investors-decor-desktop investors-decor--for G-flex'>
+                                    <img src="assets/images/investorsDecor2.webp" alt="">
+                                </div>
+
+
+                                <div class='investors-decor-desktop investors-decor--five G-flex'>
+                                    <img src="assets/images/investorsDecor3.webp" alt="">
+                                </div>
+                                <div class='investors-decor-desktop investors-decor--six G-flex'>
+                                    <img src="assets/images/settings2.webp" alt="">
+                                </div>
+
+                                <div class='investors-decor-desktop investors-decor--seven G-flex'>
+                                    <img src="assets/images/coin7.webp" alt="">
+                                </div>
+
+                                <div class='opportunities-lines G-flex'>
+                                    <img class="lines-img-desktop" src="assets/images/opportunitiesLines.webp" alt="">
+                                    <img class="lines-img-mobile" src="assets/images/opportunitiesLinesMobile2.webp" alt="">
+
+
+                                </div>
+
                             </div>
 
-                            <div class='opportunities-lines G-flex'>
-                                <img src="assets/images/opportunitiesLines.webp" alt="">
-                            </div>
+                            <button class="opportunities-btn btn-primary">Начать бесплатно</button>
 
                         </div>
                     </div>
+                    <div class="opportunities-desktop-items">
+                        <div id="financiers" class='opportunities-cnt financiers-cnt G-align-start'>
+                            <div class="opportunities-info">
+                                <h2 class='opportunities-title'>Топ решений для финансистов</h2>
+                                <div class="opportunities-items G-flex">
+                                    <div class="opportunities-item">Анализ финансовых отчетов</div>
+                                    <div class="opportunities-item">Оценка инвестиционных рисков</div>
+                                    <div class="opportunities-item">Финансовые сводки</div>
+                                    <div class="opportunities-item">Расчет показателей и KPI – ROI, NPV, IRR, EBIT, EBITDA
+                                    </div>
+                                    <div class="opportunities-item">Экономические прогнозы</div>
+                                    <div class="opportunities-item">Формирование инвестиционных стратегий</div>
 
-                    <button class="opportunities-btn btn-primary">Начать бесплатно</button>
+                                </div>
+                                <p class="opportunities-clue">Ускоряет анализ P&L, KPI и финансовых отчётов, снижая
+                                    <span class="desktop-text-wrap">риск
+                                ошибок и упрощая принятие решений</span>
+                                </p>
+                            </div>
+                            <div class="opportunities-media financiers-media">
+                                <div class='financiers-img financiers-img--one G-flex'>
+                                    <img src="assets/images/financiers1.webp" alt="">
+                                </div>
+                                <div class='financiers-img financiers-img--two G-flex'>
+                                    <img src="assets/images/financiers2.webp" alt="">
+                                </div>
+                                <div class='opportunities-lines G-flex'>
+                                    <img src="assets/images/opportunitiesLines.webp" alt="">
+                                </div>
+
+                                <div class="financiers-coin financiers-coin--one G-flex">
+                                    <img src="assets/images/coin3.webp" alt="">
+                                </div>
+                                <div class="financiers-coin financiers-coin--two G-flex">
+                                    <img src="assets/images/coin4.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="accountants" class='opportunities-cnt  G-align-start'>
+                            <div class="opportunities-info">
+                                <h2 class='opportunities-title'>Топ решений для бухгалтеров</h2>
+                                <div class="opportunities-items G-flex">
+                                    <div class="opportunities-item">Подготовка проводок, отчетов, сверок</div>
+                                    <div class="opportunities-item">Генерация бухгалтерских документов</div>
+                                    <div class="opportunities-item">Объяснение налогового законодательства</div>
+                                    <div class="opportunities-item">Анализ данных, поиск расхождений
+                                    </div>
+                                    <div class="opportunities-item">Анализ налоговой нагрузки, подсказки по льготам</div>
+                                    <div class="opportunities-item">Подготовка к аудиту</div>
+
+                                </div>
+                                <p class="opportunities-clue">
+                                    Автоматизирует расчёты, упрощает ведение отчётности
+                                    <span class="desktop-text-wrap">и помогает находить ошибки до сдачи баланса</span>
+                                </p>
+                            </div>
+                            <div class="opportunities-media accountants-media">
+
+                                <div class='accountants-decor G-flex'>
+                                    <img src="assets/images/accountantsDecor.webp" alt="">
+                                </div>
+                                <div class='accountants-decor--two G-flex'>
+                                    <img src="assets/images/accountantsDecor2.webp" alt="">
+                                </div>
+                                <div class='accountants-decor--tree G-flex'>
+                                    <img src="assets/images/accountantsDecor3.webp" alt="">
+                                </div>
+                                <div class='accountants-decor--for G-flex'>
+                                    <img src="assets/images/accountantsDecor4.webp" alt="">
+                                </div>
+
+                                <div class='accountants-decor--five G-flex'>
+                                    <img src="assets/images/coin5.webp" alt="">
+                                </div>
+
+                                <div class='accountants-decor--six G-flex'>
+                                    <img src="assets/images/coin6.webp" alt="">
+                                </div>
+
+                                <div class='opportunities-lines G-flex'>
+                                    <img src="assets/images/opportunitiesLines.webp" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div id="investors" class='opportunities-cnt financiers-cnt  G-align-start'>
+                            <div class="opportunities-info">
+                                <h2 class='opportunities-title'>Топ решений для инвесторов</h2>
+                                <div class="opportunities-items G-flex">
+                                    <div class="opportunities-item">Формирование инвестиционных идейй</div>
+                                    <div class="opportunities-item">SWOT-анализ</div>
+                                    <div class="opportunities-item">Анализ компаний и стартапов</div>
+                                    <div class="opportunities-item">Мониторинг фондового рынка
+                                    </div>
+                                    <div class="opportunities-item">Стратегии управления капиталом</div>
+                                    <div class="opportunities-item">Обзор крипторынка</div>
+
+                                </div>
+                                <p class="opportunities-clue">
+                                    Находит перспективные активы, анализирует отчёты
+                                    <span class="desktop-text-wrap">и прогнозирует движение рынка на основе вводных данных</span>
+                                </p>
+                            </div>
+                            <div class="opportunities-media financiers-media">
+
+                                <div class='investors-decor G-flex'>
+                                    <img src="assets/images/mask.webp" alt="">
+                                </div>
+                                <div class='investors-decor--two G-flex'>
+                                    <img src="assets/images/mask2.webp" alt="">
+                                </div>
+                                <div class='investors-decor--tree G-flex'>
+                                    <img src="assets/images/investorsDecor1.webp" alt="">
+                                </div>
+
+                                <div class='investors-decor--for G-flex'>
+                                    <img src="assets/images/investorsDecor2.webp" alt="">
+                                </div>
+
+
+                                <div class='investors-decor--five G-flex'>
+                                    <img src="assets/images/investorsDecor3.webp" alt="">
+                                </div>
+                                <div class='investors-decor--six G-flex'>
+                                    <img src="assets/images/settings2.webp" alt="">
+                                </div>
+
+                                <div class='investors-decor--seven G-flex'>
+                                    <img src="assets/images/coin7.webp" alt="">
+                                </div>
+
+                                <div class='opportunities-lines G-flex'>
+                                    <img src="assets/images/opportunitiesLines.webp" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button class="opportunities-btn btn-primary">Начать бесплатно</button>
+
+                    </div>
+
+
+
+
 
 
                 </div>
@@ -377,14 +581,16 @@
 
                         <h3 class="works-text">
                             Анализируйте, прогнозируйте
-                            <span class="desktop-text-wrap">и зарабатывайте быстрее, чем конкуренты</span>
+                            <span class="text-wrap">и зарабатывайте быстрее, чем конкуренты</span>
                         </h3>
 
                         <button class="works-btn btn-primary">Начать бесплатно</button>
                     </div>
 
                     <div class="how-works-media G-flex">
-                        <img src="assets/images/safe.webp" alt="">
+                        <img class="img-desktop" src="assets/images/safe.webp" alt="">
+                        <img class="img-mobile" src="assets/images/safeMobile.webp" alt="">
+
                     </div>
                     <div class="works-line-big G-flex">
                         <img src="assets/images/worksLine1.webp" alt="">
@@ -455,12 +661,12 @@
                                     <img src="assets/images/quickIcon3.svg" alt="">
                                 </div>
                                 <p class="quick-item-title">
-                                    Получите <span class="text-wrap">готовый ответ</span>
+                                    Получите <span class="desktop-text-wrap">готовый ответ</span>
                                 </p>
                             </div>
                             <p class="quick-item-text">
                                 ChatGPT выдаст качественный результат
-                                <span class="text-wrap">по запросу любой сложности</span>
+                                <span class="desktop-text-wrap">по запросу любой сложности</span>
                             </p>
                         </div>
 
@@ -471,19 +677,21 @@
 
 
                     <div class="quick-start-media G-flex">
-                        <img src="assets/images/quickStartMedia.webp" alt="">
+                        <img class="lines-img-desktop" src="assets/images/quickStartMedia.webp" alt="">
+                        <img class="lines-img-mobile" src="assets/images/quickStartMediaMobile.webp" alt="">
+
                     </div>
-                    <div class="quick-joystick G-flex">
+                    <div class="quick-desktop-img quick-joystick G-flex">
                         <img src="assets/images/joystick.webp" alt="">
                     </div>
-                    <div class="quick-keyboard G-flex">
+                    <div class="quick-desktop-img quick-keyboard G-flex">
                         <img src="assets/images/keyboard.webp" alt="">
                     </div>
-                    <div class='quick-dots G-align-center'>
+                    <div class=' quick-dots G-align-center'>
                         <div class='dot dot-blue'></div>
                         <div class='dot dot-white'></div>
                     </div>
-                    <div class="quick-start-subtract G-flex">
+                    <div class="quick-desktop-img quick-start-subtract G-flex">
                         <img src="assets/images/subtract5.webp" alt="">
                     </div>
                 </div>
@@ -491,13 +699,13 @@
         </section>
 
 
-        <section  class="reviews-section">
+        <section class="reviews-section">
             <div class="reviews-container">
                 <div class="reviews-faq-body">
                     <div id="reviews" class="reviews-body">
                         <div class="reviews-titles">
                             <h2 class="block-title">
-                                Результат, доказанный <span class="text-wrap">цифрами</span>
+                                Результат, <span class="mobile-text-wrap">доказанный <span class="desktop-text-wrap">цифрами</span></span>
                             </h2>
                             <p class="block-sub-title">
                                 Лучший способ убедиться в эффективности нейросети —
@@ -1049,7 +1257,7 @@
 
                             <div class="faq-item ">
                                 <div class="faq-item-header G-justify-between">
-                                    <p>Какие данные можно загружать?</p>
+                                    <p> Какие данные можно загружать?</p>
                                     <div class="faq-item-icon G-center"></div>
                                 </div>
                                 <div class="faq-item-sub">
@@ -1086,28 +1294,28 @@
 
                                         <div class="sub-text-icon G-align-center">
                                             <div class="sub-icon">
-                                                <img src="" alt="">
+                                                <img src="assets/images/subIcon1.png" alt="">
                                             </div>
                                             <p>Автоматическая проверка отчётов;</p>
                                         </div>
 
                                         <div class="sub-text-icon G-align-center">
                                             <div class="sub-icon">
-                                                <img src="" alt="">
+                                                <img src="assets/images/subIcon2.png" alt="">
                                             </div>
                                             <p>Расчёт налогов и оптимизация расходов;</p>
                                         </div>
 
                                         <div class="sub-text-icon G-align-center">
                                             <div class="sub-icon">
-                                                <img src="" alt="">
+                                                <img src="assets/images/subIcon3.png" alt="">
                                             </div>
                                             <p>Поиск ошибок в балансе и сверка данных;</p>
                                         </div>
 
                                         <div class="sub-text-icon G-align-center">
                                             <div class="sub-icon">
-                                                <img src="" alt="">
+                                                <img src="assets/images/subIcon4.png" alt="">
                                             </div>
                                             <p>Формирование финансовых сводок и прогнозов.</p>
                                         </div>
@@ -1115,7 +1323,7 @@
                                         <div class="sub-text-icon G-align-center">
 
                                             <p>Экономьте часы работы на рутине и концентрируйтесь на важных <span
-                                                    class="desktop-text-wrap">задачах</span>.</p>
+                                                    class="desktop-text-wrap">задачах.</span></p>
                                         </div>
 
 
@@ -1164,28 +1372,28 @@
                                             <div class="sub-icon">
                                                 <img src="" alt="">
                                             </div>
-                                            <p>Оценка инвестиционной привлекательности активов;</p>
+                                            <p>📉Оценка инвестиционной привлекательности активов;</p>
                                         </div>
 
                                         <div class="sub-text-icon G-align-center">
                                             <div class="sub-icon">
                                                 <img src="" alt="">
                                             </div>
-                                            <p>Прогнозирование прибыли и рисков;</p>
+                                            <p>📉Прогнозирование прибыли и рисков;</p>
                                         </div>
 
                                         <div class="sub-text-icon G-align-center">
                                             <div class="sub-icon">
                                                 <img src="" alt="">
                                             </div>
-                                            <p>Анализ трендов и стратегий выхода с рынка;</p>
+                                            <p>📉Анализ трендов и стратегий выхода с рынка;</p>
                                         </div>
 
                                         <div class="sub-text-icon G-align-center">
                                             <div class="sub-icon">
                                                 <img src="" alt="">
                                             </div>
-                                            <p>Оценка стартапов и бизнес-моделей.</p>
+                                            <p>📉Оценка стартапов и бизнес-моделей.</p>
                                         </div>
 
                                         <div class="sub-text-icon G-align-center">
@@ -1242,7 +1450,7 @@
                 <div class="faster-body">
                     <div class="faster-titles G-flex-column">
                         <h2 class="block-title">
-                            В 10 раз быстрее. 100 раз точнее.
+                            В 10 раз быстрее. <span class="mobile-text-wrap">100 раз точнее.</span>
                         </h2>
                         <p class=" block-sub-title">
                             Финансовая аналитика нового уровня.
@@ -1270,7 +1478,10 @@
                     </div>
 
                     <div class="faster-line">
-                        <img src="assets/images/fasterLine.webp" alt="">
+                        <img class="img-desktop" src="assets/images/fasterLine.webp" alt="">
+                        <img class="img-mobile" src="assets/images/fasterLineMobile.webp" alt="">
+
+
                     </div>
 
                     <div class="faster-settings">
@@ -1290,6 +1501,10 @@
                     <div class="faster-coin--two">
                         <img src="assets/images/coin9.webp" alt="">
                     </div>
+                    <div class="faster-shape-mobile">
+                        <img src="assets/images/fasterShape.webp" alt="">
+                    </div>
+
 
                     <div class="faster-subtract G-flex">
                         <img src="assets/images/subtract6.webp" alt="">
@@ -1342,8 +1557,14 @@
 
 
                 <div class="footer-media G-flex">
-                    <img src="assets/images/footerMedia.webp" alt="">
+                    <img class="img-desktop" src="assets/images/footerMedia.webp" alt="">
+                    <img class="img-mobile" src="assets/images/footerMediaMobile.webp" alt="">
+
                 </div>
+                <p class="footer-clue-mobile">
+                    © 2025 GPT-4.
+                    <span class="text-wrap">Все права защищены.</span>
+                </p>
             </div>
         </div>
     </footer>
@@ -1351,6 +1572,7 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script src="assets/js/swiper.js"></script>
 <script src="assets/js/index.js"></script>
 

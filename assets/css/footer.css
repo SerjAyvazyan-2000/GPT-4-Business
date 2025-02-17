@@ -23,6 +23,9 @@
     border-radius: 25px;
     padding: 72px 72px 60px 72px;
     gap: 223px;
+    position: relative;
+    z-index: 2;
+
 }
 
 .footer-menu-column {
@@ -37,6 +40,15 @@
     line-height: 14.4px;
     margin-top: 37px;
     color: var(--gray5);
+
+}
+.footer-clue-mobile{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.4px;
+    margin-top: 37px;
+    color: var(--gray5);
+    display: none;
 
 }
 .footer-menu{
@@ -68,6 +80,10 @@
     max-width: 171px;
     width: 100%;
     height: 133px;
+    position: absolute;
+    right: 138px;
+    top: 72px;
+    z-index: -1;
 }
 .footer-media img{
     width: 100%;
@@ -75,26 +91,62 @@
     object-fit: cover;
 }
 
+
 @media (max-width: 1400px) {
 }
 
 @media (max-width: 1200px) {
 
-
+    .footer-body{
+        gap: 100px;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 992px) {
+    .footer-body{
+        gap: 40px;
+    }
 
 
 }
 
 @media (max-width: 768px) {
 
+    .footer-clue{
+        display: none;
+    }
+    .footer-clue-mobile{
+        display: block;
+        margin-top: 76px;
+
+    }
 
 }
 
 @media (max-width: 576px) {
-
+    .footer-menu-column{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    .footer-media{
+        bottom: 0;
+        top: unset;
+        right: 0;
+        height: 168px;
+        max-width: 218px;
+        width: max-content;
+    }
+    .footer::after{
+        display: none;
+    }
+    .footer-body{
+        border-radius: 20px;
+    }
+    .footer {
+        padding-bottom: 20px;
+    }
 }
 
 @media (max-width: 400px) {

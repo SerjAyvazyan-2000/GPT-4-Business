@@ -16,7 +16,12 @@ header.moved {
 
 header.moved .header-body {
     padding: 10px 0;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
 
+header.moved .header-body::after {
+    display: none;
 }
 
 .header-container {
@@ -34,9 +39,25 @@ header.moved .header-body {
     border-left: 1px solid var(--gray2);
     border-right: 1px solid var(--gray2);
     position: relative;
+    z-index: 2;
 
 }
+
 .header-body::after {
+    content: '';
+    backdrop-filter: blur(6px);
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    z-index: 1;
+    left: 50%;
+    background: var(--gray2);
+    transform: translateX(-50%);
+
+}
+
+header::after {
     content: '';
     backdrop-filter: blur(6px);
     position: absolute;
@@ -47,6 +68,7 @@ header.moved .header-body {
     z-index: -1;
 
 }
+
 .header-logo {
     flex: 1 1 auto;
 }
@@ -150,7 +172,11 @@ header.moved .header-body {
     }
 
     .header-body {
-        gap: 10px;
+        gap: 50px;
+    }
+
+    .menu-list {
+        gap: 30px;
     }
 }
 
@@ -171,6 +197,10 @@ header.moved .header-body {
 
     .menu-item {
         width: 100%;
+    }
+
+    .header-body::after {
+        display: none;
     }
 
     .menu-link {
@@ -197,36 +227,42 @@ header.moved .header-body {
     }
 
     .burger {
-        flex: 0 0 42px;
-        height: 42px;
+        flex: 0 0 23px;
+        height: 18px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 4px;
+
         cursor: pointer;
         transition: .3s;
         z-index: 4;
-        background: var(--lighy-black3);
-        border-radius: 50%;
     }
 
     .burger span {
-        width: 16px;
+        width: 23px;
         display: block;
-        height: 1px;
+        height: 2px;
         background: var(--white);
         transition: .3s;
         border-radius: 5px;
-        margin-left: 7px;
 
     }
 
+    header {
+        border-bottom: 1px solid var(--gray);
+    }
+
+    .header-body {
+        border: none;
+        padding: 20px 0;
+    }
+
     .burger::after {
-        width: 24px;
+        width: 23px;
         content: '';
         display: block;
-        height: 1px;
+        height: 2px;
         background: var(--white);
         transition: .3s;
         border-radius: 5px;
@@ -234,10 +270,10 @@ header.moved .header-body {
     }
 
     .burger::before {
-        width: 24px;
+        width: 23px;
         content: '';
         display: block;
-        height: 1px;
+        height: 2px;
         background: var(--white);
         transition: .3s;
         border-radius: 5px;
@@ -257,7 +293,7 @@ header.moved .header-body {
 
     .burger.active::before {
         transform: rotate(-45deg);
-        top: 4px;
+        top: 8px;
         position: relative;
         background: var(--white);
 
@@ -267,7 +303,7 @@ header.moved .header-body {
 
     .burger.active::after {
         transform: rotate(45deg);
-        bottom: 6px;
+        bottom: 7px;
         position: relative;
         background: var(--white);
 
@@ -292,12 +328,9 @@ header.moved .header-body {
         gap: 10px;
     }
 
+
     .menu.active {
         right: 0;
-    }
-
-    .header-body {
-        justify-content: stretch;
     }
 
 
@@ -320,25 +353,11 @@ header.moved .header-body {
     }
 
 
-    .header-body {
-        justify-content: space-between;
-        padding: 12px 24px;
-        border-radius: 16px;
-    }
-
-    header {
-        padding: 12px 0;
-    }
-
     .header-decor::after {
         display: none;
     }
 
-    header.moved .header-body {
-        padding: 7px 24px;
 
-
-    }
 }
 
 @media (max-width: 400px) {
