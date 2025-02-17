@@ -34,7 +34,7 @@
     width: 100%;
     top: 83px;
     left: 77px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .hero-clock {
@@ -2054,6 +2054,10 @@
 
     .hero-diagram-two {
         z-index: -1;
+    }
+    .hero-diagram{
+        z-index: -1;
+
     }
 
     .opportunities-btn {
