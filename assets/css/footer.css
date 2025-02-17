@@ -28,13 +28,37 @@
 
 }
 
+.footer-body::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    right: 20px;
+    background-color: var(--gray2);
+    bottom: -40px;
+    z-index: -1;
+
+}
+
+.footer-body::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    left: 20px;
+    background-color: var(--gray2);
+    bottom: -40px;
+    z-index: -1;
+
+}
+
 .footer-menu-column {
     margin-right: -20px;
     gap: 79px;
     min-width: 314px;
 }
 
-.footer-clue{
+.footer-clue {
     font-weight: 400;
     font-size: 12px;
     line-height: 14.4px;
@@ -42,7 +66,8 @@
     color: var(--gray5);
 
 }
-.footer-clue-mobile{
+
+.footer-clue-mobile {
     font-weight: 400;
     font-size: 12px;
     line-height: 14.4px;
@@ -51,10 +76,12 @@
     display: none;
 
 }
-.footer-menu{
+
+.footer-menu {
     gap: 10px;
 }
-.footer-menu-link{
+
+.footer-menu-link {
     font-weight: 300;
     font-size: 14px;
     line-height: 21.7px;
@@ -68,7 +95,7 @@
 
 }
 
-.footer-menu-title{
+.footer-menu-title {
     color: var(--primary);
     font-weight: 600;
     font-size: 18px;
@@ -76,7 +103,8 @@
     letter-spacing: 1px;
 
 }
-.footer-media{
+
+.footer-media {
     max-width: 171px;
     width: 100%;
     height: 133px;
@@ -85,7 +113,8 @@
     top: 72px;
     z-index: -1;
 }
-.footer-media img{
+
+.footer-media img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -93,18 +122,28 @@
 
 
 @media (max-width: 1400px) {
+    .footer-body::after {
+        display: none;
+
+    }
+
+    .footer-body::before {
+        display: none;
+
+
+    }
 }
 
 @media (max-width: 1200px) {
 
-    .footer-body{
+    .footer-body {
         gap: 100px;
         flex-wrap: wrap;
     }
 }
 
 @media (max-width: 992px) {
-    .footer-body{
+    .footer-body {
         gap: 40px;
     }
 
@@ -113,10 +152,11 @@
 
 @media (max-width: 768px) {
 
-    .footer-clue{
+    .footer-clue {
         display: none;
     }
-    .footer-clue-mobile{
+
+    .footer-clue-mobile {
         display: block;
         margin-top: 76px;
 
@@ -125,12 +165,13 @@
 }
 
 @media (max-width: 576px) {
-    .footer-menu-column{
+    .footer-menu-column {
         flex-direction: column;
         align-items: stretch;
         gap: 10px;
     }
-    .footer-media{
+
+    .footer-media {
         bottom: 0;
         top: unset;
         right: 0;
@@ -138,12 +179,15 @@
         max-width: 218px;
         width: max-content;
     }
-    .footer::after{
+
+    .footer::after {
         display: none;
     }
-    .footer-body{
+
+    .footer-body {
         border-radius: 20px;
     }
+
     .footer {
         padding-bottom: 20px;
     }

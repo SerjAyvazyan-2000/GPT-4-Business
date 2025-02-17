@@ -314,7 +314,7 @@
 .about-us-lines {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 1px;
 }
 
 .about-us-time {
@@ -1054,7 +1054,7 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
+    top: -2px;
     height: 164px;
     width: 100%;
     background-image: url('../images/blur2.webp');
@@ -1065,7 +1065,7 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -2px;
     height: 164px;
     width: 100%;
     background-image: url('../images/blur.webp');
