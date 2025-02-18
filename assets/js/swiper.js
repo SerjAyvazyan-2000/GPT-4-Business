@@ -6,7 +6,7 @@ function initSwiper() {
 
     const isMobile = window.innerWidth <= 992;
     const direction = isMobile ? "horizontal" : "vertical";
-    const speed = isMobile ? 5000 : 2000;
+    const delay = isMobile ? 4000 : 2000;
 
     if (reviewsSwiper) {
         reviewsSwiper.destroy(true, true);
@@ -22,10 +22,10 @@ function initSwiper() {
         },
         loop: true,
         autoplay: {
-            delay: 10,
+            delay: delay,
             disableOnInteraction: false,
         },
-        speed: speed,
+        speed: 2000,
 
         breakpoints: {
             320: {slidesPerView: 1,},
