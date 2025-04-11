@@ -1,26 +1,6 @@
 :root {
     --light-black: rgba(35, 35, 35, 1);
-    --light-black2: rgba(44, 44, 44, 1);
 
-    --white: rgba(255, 255, 255, 1);
-    --gray: rgba(67, 67, 67, 1);
-    --gray2: rgba(49, 49, 49, 1);
-    --gray3: rgba(89, 89, 89, 1);
-    --gray4: rgba(54, 54, 54, 1);
-    --gray5: rgba(133, 133, 133, 1);
-    --gray6: rgba(41, 41, 41, 1);
-    --gray7: rgba(59, 59, 59, 1);
-    --gray8: rgba(102, 102, 102, 1);
-    --gray9: rgba(50, 50, 50, 1);
-
-    --light-gray: rgba(153, 153, 153, 1);
-
-    --primary: rgba(84, 102, 233, 1);
-    --light-primary: rgba(84, 102, 233, 0.3);
-    --black: rgba(27, 27, 27, 1);
-    --black2: rgba(30, 30, 30, 1);
-    --black3: rgba(23, 23, 23, 1);
-    --black4: rgba(20, 20, 20, 1);
 
 
 }
@@ -45,68 +25,6 @@ main {
     padding: 0 10px;
 }
 
-.text-wrap {
-    display: block;
-}
-
-.desktop-text-wrap {
-    display: block;
-}
-
-.block-title {
-    font-weight: 600;
-    font-size: 37px;
-    line-height: 40.7px;
-    color: var(--white);
-
-}
-
-.block-sub-title {
-    margin-top: 20px;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21.6px;
-    color: var(--gray5);
-
-}
-
-.img-mobile {
-    display: none;
-}
-
-.btn-primary {
-    background-color: var(--primary);
-    padding: 22px 50px;
-    border-radius: 20px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    color: var(--white);
-    transition: 0.3s ease-in-out;
-    border: 1px solid transparent;
-}
-
-.btn-primary:hover {
-    background: var(--light-black);
-    color: var(--white);
-    border: 1px solid var(--gray);
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-
-.dot-blue {
-    background: var(--primary);
-}
-
-.dot-white {
-    background: var(--white);
-    position: absolute;
-    right: -10px;
-}
 
 
 @media (max-width: 1400px) {
@@ -124,47 +42,11 @@ main {
 
 @media (max-width: 768px) {
 
-    .desktop-text-wrap {
-        display: inline;
-    }
+
 
 }
 
 @media (max-width: 576px) {
-
-    .img-desktop {
-        display: none;
-    }
-
-    .block-title {
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 26.4px;
-
-    }
-
-    .block-sub-title {
-        margin-top: 17px;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16.8px;
-
-    }
-
-    .img-mobile {
-        display: block;
-
-    }
-
-    .btn-primary {
-        border-radius: 18px;
-
-    }
-
-
-    .mobile-text-wrap {
-        display: block;
-    }
 
 
 }

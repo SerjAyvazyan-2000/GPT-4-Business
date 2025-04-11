@@ -58,141 +58,17 @@ window.addEventListener('scroll', function () {
 });
 
 
-function toggleActiveState(item) {
-    const allItems = document.querySelectorAll('.faq-item');
+const questions = document.querySelectorAll('.faq-question');
 
-    allItems.forEach(otherItem => {
-        if (otherItem !== item) {
-            otherItem.classList.remove('active');
-        }
-    });
+questions.forEach(question => {
+    question.addEventListener('click', () => {
+        question.classList.toggle('active');
+        const answer = question.nextElementSibling;
 
-    item.classList.toggle('active');
-}
-
-document.querySelectorAll('.faq-item').forEach(item => {
-    item.addEventListener('click', () => toggleActiveState(item));
-    const icon = item.querySelector('.faq-item-icon');
-    icon.addEventListener('click', (event) => {
-        event.stopPropagation();
-        toggleActiveState(item);
-    });
-});
-
-
-
-
-handleScroll();
-
-function handleScroll() {
-    const elements = document.querySelectorAll('.animation');
-    elements.forEach(element => {
-        const elementRect = element.getBoundingClientRect();
-        const isElementVisible = elementRect.top < window.innerHeight && elementRect.bottom >= 0;
-
-        if (isElementVisible) {
-            if (!element.classList.contains('active')) {
-                element.classList.add('active');
-            }
+        if (question.classList.contains('active')) {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
         } else {
-            if (element.classList.contains('active')) {
-                element.classList.remove('active');
-            }
-        }
-    });
-}
-
-window.addEventListener('scroll', handleScroll);
-
-document.addEventListener("DOMContentLoaded", function () {
-    const tabs = document.querySelectorAll(".opportunities-tab");
-    const contents = document.querySelectorAll(".opportunities-cnt");
-
-    tabs.forEach(tab => {
-        tab.addEventListener("click", function () {
-            const tabId = this.dataset.id; // Получаем data-id
-
-            // Убираем active у всех табов
-            tabs.forEach(t => t.classList.remove("active"));
-
-            // Добавляем active к нажатому табу
-            this.classList.add("active");
-
-            // Скрываем весь контент
-            contents.forEach(content => content.style.display = "none");
-
-            // Показываем нужный блок
-            document.getElementById(tabId).style.display = "flex";
-        });
-    });
-
-    // Показываем изначально financiers
-    contents.forEach(content => content.style.display = "none");
-    document.getElementById("financiers").style.display = "flex";
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const leftItems = document.querySelectorAll(".reviews-left-item");
-    const reviewItems = document.querySelectorAll(".reviews-item");
-
-    leftItems.forEach((item, index) => {
-        if (index !== 0) {
-            item.style.display = "none";
-        }
-    });
-
-    reviewItems.forEach(item => {
-        item.addEventListener("click", function () {
-            const targetId = this.getAttribute("data-id");
-
-            leftItems.forEach(leftItem => {
-                if (leftItem.getAttribute("data-id") === targetId) {
-                    leftItem.style.display = "block";
-                } else {
-                    leftItem.style.display = "none";
-                }
-            });
-        });
-    });
-});
-
-
-
-
-document.querySelectorAll('.menu-link').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-
-        if (targetElement) {
-            const headerHeight = document.querySelector('.header').offsetHeight;
-            const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
-
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-
-
-document.querySelectorAll('.footer-menu-link').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-
-        if (targetElement) {
-            const headerHeight = document.querySelector('.header').offsetHeight;
-            const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
-
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
+            answer.style.maxHeight = null;
         }
     });
 });
